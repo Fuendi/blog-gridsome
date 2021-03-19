@@ -20,7 +20,7 @@
               </h2> -->
               <span class="meta">
                 <!-- <a href="#">Start Bootstrap</a> -->
-                创建于 {{ $page.post.created_at }}
+                创建于 {{ $page.post.created_at | dateFormat("YYYY-MM-DD HH:mm") }}
               </span>
             </div>
           </div>

@@ -1,9 +1,10 @@
 <template>
   <Layout>
     <!-- Page Header -->
-    <header class="masthead"
+    <header
+      class="masthead"
       :style="{
-         backgroundImage: `url(${GRIDSOME_API_URL}${
+        backgroundImage: `url(${GRIDSOME_API_URL}${
           general.cover ? general.cover.url : ''
         })`,
       }"
@@ -14,7 +15,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
               <h1>{{ general.title }}</h1>
-              <span class="subheading">{{general.subtitle}}</span>
+              <span class="subheading">{{ general.subtitle }}</span>
             </div>
           </div>
         </div>
@@ -41,7 +42,8 @@
             <p class="post-meta">
               <!-- Posted by -->
               <!-- <a href="#">Start Bootstrap</a> -->
-              发布于 {{ edge.node.published_at }}
+              发布于
+              {{ edge.node.published_at | dateFormat("YYYY-MM-DD HH:mm") }}
             </p>
             <p>
               <span v-for="tag in edge.node.tags" :key="tag.id">
@@ -52,7 +54,7 @@
             <hr />
           </div>
           <!-- Pager -->
-           <Pager :info="$page.posts.pageInfo"/>
+          <Pager :info="$page.posts.pageInfo" />
         </div>
       </div>
     </div>
@@ -95,7 +97,8 @@ query ($page: Int) {
 </page-query>
 
 <script>
-import { Pager } from 'gridsome'
+import { Pager } from "gridsome";
+import moment from "moment";
 
 export default {
   name: "HomePage",
@@ -103,11 +106,11 @@ export default {
     title: "Hello, world!",
   },
   components: {
-    Pager
+    Pager,
   },
   computed: {
-    general () {
-      return this.$page.general.edges[0].node
+    general() {
+      return this.$page.general.edges[0].node;
     }
   }
 };

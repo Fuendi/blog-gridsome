@@ -19,16 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <g-link class="nav-link" to="/">Home</g-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <g-link class="nav-link" to="/about">About</g-link>
             </li>
+            <!-- <li class="nav-item">
+              <g-link class="nav-link" to="/post">Sample Post</g-link>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="post.html">Sample Post</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <g-link class="nav-link" to="/contact">Contact</g-link>
             </li>
           </ul>
         </div>
@@ -45,23 +45,23 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://stackoverflow.com/questions/tagged/javascript" target="_blank" rel="noopener">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.google.com" target="_blank" rel="noopener">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                    <i class="fab fa-google fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://github.com/Fuendi" target="_blank" rel="noopener">
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -70,7 +70,7 @@
               </li>
             </ul>
             <p class="copyright text-muted">
-              Copyright &copy; Your Website 2020
+              Copyright &copy; fuendi Website 2020
             </p>
           </div>
         </div>
