@@ -1,14 +1,9 @@
-# Default starter for Gridsome
+# Gridsome + strapi 项目
 
-This is the project you get when you run `gridsome create new-project`.
+## 实现个人博客
+DEMO地址   https://fuendi-blog.vercel.app/
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+### 说明
+strapi 地址: http://121.43.132.207:1337/admin
+gridsome 项目地址: https://github.com/Fuendi/blog-gridsome
+strapi 项目地址: https://github.com/Fuendi/blog-backend
